@@ -1,6 +1,5 @@
 import pandas as pd
 from constants import RDS_ENDPOINT, RDS_PORT, RDS_USERNAME, RDS_PASSWORD, JDBC_URL
-from pyspark.conf import SparkConf
 
 
 def read_s3_to_spark(url, spark):
