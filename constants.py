@@ -25,3 +25,7 @@ JDBC_DRIVER = "./driver/postgresql-42.7.3.jar"
 JDBC_URL = f"jdbc:postgresql://{RDS_ENDPOINT}:{RDS_PORT}/{RDS_DB_NAME}?user={RDS_USERNAME}&password={RDS_PASSWORD}"  # endpoint = hostname
 
 MONGO_URI = os.getenv('MONGO_URI')
+
+
+START_DATE = "2018-01-01"
+END_DATE = "2024-01-01"
