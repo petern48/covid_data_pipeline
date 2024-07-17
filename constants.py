@@ -9,7 +9,7 @@ COVID_WEATHER_FILE = f"{DATA_DIR}/weather.csv"
 
 
 S3_BUCKET = os.getenv('S3_BUCKET')
-COVID_EPIDEMIOLOGY_FILE = f"{DATA_DIR}/epidemiology.csv/epidemiology.csv"
+COVID_EPIDEMIOLOGY_FILE = f"s3://{S3_BUCKET}/covid/epidemiology.csv"
 COVID_HOSPITALIZATIONS_FILE = f"s3://{S3_BUCKET}/covid/hospitalizations.csv"
 SP500_FILE = f"s3://{S3_BUCKET}/stocks/SP500-historical.csv"
 NASDAQ_FILE = f"s3://{S3_BUCKET}/stocks/NASDAQ-historial.csv"
