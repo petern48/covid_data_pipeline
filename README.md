@@ -1,15 +1,16 @@
 # covid_data_pipeline
 
 Here's the general outline of the project:
-- Gather data sources
+- Gather data sources from online
+- Design the data model: both for database and datawarehouse (for efficient analytics)
 - Load the raw data files into cloud storage (AWS S3)
 - Preprocess the data a tiny bit and load the data files into a structured relational database. (AWS RDS)
-- Apply transformations to the data to clean and ensure data quality
-- Using Airflow on AWS EC2, automate the process of Extracting, Transforming, and Loading (ETL) the data into a datawarehouse
-- Visualize the trends between covid and stocks using Power Bi and the datawarehouse
+- Using Airflow on an AWS EC2 instance, automate the process of Extracting, Transforming, and Loading (ETL) the data into a datawarehouse
+    - Transformations are done to clean the data, improve the data quality, and restructure the tables for the DW for analytics
+- Write unit tests to ensure the transformations act properly and ensure data quality 
+- Visualize the trends between covid and stocks using Power Bi loaded with the data from the datawarehouse
 
-
-Currently in development. Currently have 1-3 done and am wrapping up on 4:
+README.md is currently in development, but it will soon be updated with further details and visuals, once I'm back from my short vacation.
 
 <!-- Data Sources:
 
