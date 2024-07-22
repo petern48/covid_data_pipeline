@@ -52,6 +52,7 @@ def create_date_dim_df(spark):
         .withColumn("month_name_abbr",F.date_format('date', 'MMM')) \
         .withColumn("year",F.year("date")) \
         .withColumn("quarter",F.quarter("date"))
+    return date_df
         # .withColumn("date_description",F.date_format('date', 'MMMM d, yyyy')) \
         # .withColumn('date',F.to_date('date_timestamp')) \
         # .withColumn("day_name",F.date_format('date_timestamp', 'EEEE')) \
@@ -59,4 +60,3 @@ def create_date_dim_df(spark):
         # .withColumn("month_2",F.date_format('date_timestamp', 'MM')) \
         # .withColumn("month_name",F.date_format('date_timestamp', 'MMMM')) \
         # .withColumn("week_of_year",F.weekofyear("date_timestamp")) \
-    return date_df
