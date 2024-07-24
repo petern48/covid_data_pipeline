@@ -11,3 +11,6 @@ run:
 	mvn exec:java -Dexec.mainClass="server_java.App"
 
 	# java -cp target/server_java-1.0-SNAPSHOT.jar server_java.App
+
+test:
+	mvn test
