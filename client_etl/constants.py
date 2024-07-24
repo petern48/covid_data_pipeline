@@ -20,7 +20,7 @@ RDS_USERNAME = os.getenv('RDS_USERNAME')
 RDS_PASSWORD = os.getenv('RDS_PASSWORD')
 RDS_DB_NAME = 'postgres'
 
-JDBC_DRIVER = "./driver/postgresql-42.7.3.jar"
+JDBC_DRIVER = "../driver/postgresql-42.7.3.jar"
 # https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/java-rds.html
 JDBC_URL = f"jdbc:postgresql://{RDS_ENDPOINT}:{RDS_PORT}/{RDS_DB_NAME}?user={RDS_USERNAME}&password={RDS_PASSWORD}"  # endpoint = hostname
 
