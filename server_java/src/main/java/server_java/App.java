@@ -1,8 +1,8 @@
 package server_java;
 
+import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import com.sun.net.httpserver.HttpServer;
 
 import java.io.*;
 import java.net.InetSocketAddress;
@@ -46,6 +46,9 @@ public class App
 
     public static void main(String[] args) throws IOException {
         int port = 8080;
+        if (args.length > 0) {
+            port = Integer.parseInt(args[0]);
+        }
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
         server.createContext("/server", new ClientHandler());  // request handler
         server.setExecutor(null);
