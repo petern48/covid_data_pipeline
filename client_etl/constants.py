@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv("../.env")
 
 DATA_DIR = "data"
 COVID_ECONOMY_FILE = f"{DATA_DIR}/economy.csv"
