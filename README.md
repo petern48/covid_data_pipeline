@@ -2,18 +2,19 @@
 
 Here's the general outline of the project:
 - Gather data sources from online
-- Design the data model for the database and datawarehouse
+- Design the data model for the database and data warehouse
 - Load the raw data files into cloud storage (AWS S3)
-- Design a HTTP Server in Java for "generating" the data and a HTTP Client in Python for extraction
+<!-- - Design a HTTP Server in Java for "generating" the data and a HTTP Client in Python for extraction -->
 - Preprocess the data and load it into a structured relational database. (AWS RDS)
-- Using Airflow on an AWS EC2 instance, automate the process of Extracting, Transforming, and Loading (ETL) the data into a datawarehouse
+- Automate the process of Extracting, Transforming, and Loading (ETL) the data into a data warehouse
     - Transformations are done to clean the data, improve the data quality, and restructure the tables for the DW for analytics
-- Write unit tests to ensure the Java server and data pipeline perform properly 
-- Visualize the trends between covid and stocks using Power Bi loaded with the data from the datawarehouse (TODO)
+- Write unit tests to ensure the data pipeline behaves properly and reliably. 
+<!-- - Visualize the trends between covid and stocks using Power Bi loaded with the data from the datawarehouse (TODO) -->
 
-README.md is currently in development, but it will soon be updated with further details and visuals, once I'm back from my short vacation.
+<!-- 
+Congrats: you found my notes :)
 
-<!-- Data Sources:
+Data Sources (not all of these are used):
 
 Google: https://health.google.com/covid-19/open-data/
 - epidemiology.csv
